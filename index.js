@@ -1,39 +1,33 @@
-let max = 3;
-let min = 1;
+const max = 3;
 
-let h1 = document.querySelector('h1');
+const h1 = document.querySelector('h1');
+const img1 = document.querySelectorAll('img')[0];
+const img2 = document.querySelectorAll('img')[1];
 
-let randomNumber1 = Math.floor((Math.random() * max) + 1);
-let image1 = './dice'+ randomNumber1 + '.png';
-let imagePlayer1 = document.querySelectorAll('img')[0].setAttribute('src', image1)
+function refaire() {
+    const randomNumber1 = Math.floor(Math.random() * max + 1);
+    const randomNumber2 = Math.floor(Math.random() * max + 1);
 
+    img1.setAttribute('src', `./dice${randomNumber1}.png`);
+    img2.setAttribute('src', `./dice${randomNumber2}.png`);
 
-let randomNumber2 = Math.floor((Math.random() * max) + 1);
-let image2 = './dice'+ randomNumber2 + '.png';
-let imagePlayer2 = document.querySelectorAll('img')[1].setAttribute('src', image2)
-
-if (randomNumber1 === 1 && randomNumber2 === 2){
-    h1.textContent = '🚩 Player1 wins!';
-
-}else if (randomNumber1 === 2 && randomNumber2 === 1){
-    h1.textContent = '🚩 Player2 wins!';
-
-}else if (randomNumber1 === 2 && randomNumber2 === 3){
-    h1.textContent = '🚩 Player1 wins!';
+    if (randomNumber1 === 1 && randomNumber2 === 2) {
+        h1.textContent = '🚩 Player1 wins!';
+    } else if (randomNumber1 === 2 && randomNumber2 === 1) {
+        h1.textContent = '🚩 Player2 wins!';
+    } else if (randomNumber1 === 2 && randomNumber2 === 3) {
+        h1.textContent = '🚩 Player1 wins!';
+    } else if (randomNumber2 === 2 && randomNumber1 === 3) {
+        h1.textContent = '🚩 Player2 wins!';
+    } else if (randomNumber1 === 1 && randomNumber2 === 3) {
+        h1.textContent = '🚩 Player2 wins!';
+    } else if (randomNumber2 === 1 && randomNumber1 === 3) {
+        h1.textContent = '🚩 Player1 wins!';
+    } else {
+        h1.textContent = 'Draw!';
+    }
 }
 
-else if (randomNumber2 === 2 && randomNumber1 === 3){
-    h1.textContent = '🚩 Player2 wins!';
-}
+refaire();
 
-else if(randomNumber1 === 1 && randomNumber2 === 3){
-    h1.textContent = '🚩 Player2 wins!';
-}
-
-else if(randomNumber2 === 1 && randomNumber1 === 3){
-    h1.textContent = '🚩 Player1 wins!';
-}
-
-else{
-    h1.textContent = 'Draw!';
-}
+h1.addEventListener('click', refaire);

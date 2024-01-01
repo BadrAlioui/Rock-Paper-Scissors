@@ -1,27 +1,23 @@
-
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: black;
 }
 
-
-h1, p{
-    color: #57a15a ;
-    margin-bottom : 30px;
-    
+h1,
+p {
+    color: #57a15a;
+    margin-bottom: 30px;
 }
 
-p{
+p {
     margin-bottom: 20px;
     font-size: 2rem;
-    font-family: 'Indie Flower', cursive;
-
+    font-family: 'Roboto-italic', sans-serif;
 }
 
-
-h1{
+h1 {
     font-size: 5rem;
     font-family: 'Lobster', cursive;
 }
@@ -34,10 +30,9 @@ h1{
 
 .dice1 {
     display: inline-block;
-    
 }
 
-.dice2{
+.dice2 {
     display: inline-block;
 }
 
@@ -45,3 +40,7 @@ h1{
     margin-left: 50px;
 }
 
+@font-face {
+    font-family: 'Roboto-italic';
+    src: url('./Roboto-Italic.ttf');
+}
