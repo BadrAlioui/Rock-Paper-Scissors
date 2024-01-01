@@ -22,6 +22,15 @@ h1 {
     font-family: 'Lobster', cursive;
 }
 
+button {
+    margin-top: 20px;
+    padding: 0.75rem;
+    border: 2px solid #57a15a;
+    border-radius: 10px;
+    color: #57a15a;
+    background-color: transparent;
+}
+
 .container {
     text-align: center;
     width: 70%;

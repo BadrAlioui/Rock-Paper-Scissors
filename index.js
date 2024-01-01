@@ -30,4 +30,4 @@ function refaire() {
 
 refaire();
 
-h1.addEventListener('click', refaire);
+document.querySelector('button').addEventListener('click', refaire);
