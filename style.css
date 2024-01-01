@@ -1,0 +1,47 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+h1, p{
+    color: #57a15a ;
+    margin-bottom : 30px;
+    
+}
+
+p{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+
+h1{
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.container {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.dice1 {
+    display: inline-block;
+    
+}
+
+.dice2{
+    display: inline-block;
+}
+
+.dice2 {
+    margin-left: 50px;
+}
+
