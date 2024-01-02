@@ -53,3 +53,9 @@ button {
     font-family: 'Roboto-italic';
     src: url('./Roboto-Italic.ttf');
 }
+
+@media (max-width: 820px) {
+    .dice2 {
+        margin-left: 0;
+    }
+}
